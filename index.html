@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Keyboard</title>
+    <style>
+        body{
+            background-color: rgb(154, 149, 149);
+        }
+        #main {
+            width: 95%;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            height: 440px;
+            margin: auto;
+            margin-top: 170px;
+            border-radius: 60px;
+            display: grid;
+            grid-template-columns: repeat(22, 1fr);
+            grid-template-rows: 40px repeat(5, 68px);
+            gap: 10px;
+            padding: 70px 30px;
+            background-color: whitesmoke;
+        }
+
+        #main>div {
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: whitesmoke;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            padding: 5px 8px 0px 8px;
+
+        }
+
+        img {
+            width: 30%;
+
+        }
+
+        #logo {
+            width: 100%;
+        }
+
+        p {
+            color: rgb(29, 112, 222);
+        }
+
+        #main>div:nth-child(19) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(20) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(21) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(22) {
+            box-shadow: none;
+            margin: -50px 0px 0px -20px;
+        }
+
+        #main>div:nth-child(36) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(37) {
+            margin-left: -78px;
+            text-align: right;
+        }
+
+        #main>div:nth-child(38) {
+            font-size: 13px;
+        }
+
+        #main>div:nth-child(39) {
+            font-size: 13px;
+        }
+
+        #main>div:nth-child(40) {
+            font-size: 13px;
+        }
+
+        #main>div:nth-child(45) {
+            box-shadow: none;
+
+
+        }
+
+        #main>div:nth-child(46) {
+            margin: 0px 40px 0px -80px;
+        }
+
+        #main>div:nth-child(47) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(48) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(49) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(50) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(51) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(52) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(53) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(54) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(55) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(56) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(57) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(58) {
+            margin: 0px 40px 0px -40px;
+        }
+
+        #main>div:nth-child(59) {
+            margin: 0px 0px 0px -40px;
+        }
+
+        #main>div:nth-child(88) {
+            margin: -80px 0px 0px 0px;
+        }
+
+        #main>div:nth-child(82) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(83) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(84) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(67) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(68) {
+            margin: 0px 20px 0px -80px;
+        }
+
+        #main>div:nth-child(69) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(70) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(71) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(72) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(73) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(74) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(75) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(76) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(77) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(78) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(79) {
+            margin: 0px 20px 0px -20px;
+        }
+
+        #main>div:nth-child(80) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(81) {
+            margin: 0px 0px 0px -98px;
+            text-align: right;
+        }
+
+        #main>div:nth-child(89) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(90) {
+            margin: 0px 0px 0px -80px;
+        }
+
+        #main>div:nth-child(101) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(102) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(103) {
+            margin: 0px 0px 0px -157px;
+            text-align: right;
+        }
+
+        #main>div:nth-child(104) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(106) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(110) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(111) {
+            margin: 0px -15px 0px 0px;
+        }
+
+        #main>div:nth-child(112) {
+            margin: 0px -25px 0px 15px;
+        }
+
+        #main>div:nth-child(113) {
+            margin: 0px -40px 0px 25px;
+        }
+
+        #main>div:nth-child(114) {
+            margin: 0px -65px 0px 40px;
+        }
+
+        #main>div:nth-child(115) {
+            margin: 0px -30px 0px 65px;
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(116) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(117) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(118) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(125) {
+            margin: 0px 0px 0px -30px;
+            text-align: right;
+        }
+
+        #main>div:nth-child(124) {
+            margin: 0px 30px 0px -60px;
+        }
+
+        #main>div:nth-child(123) {
+            margin: 0px 60px 0px -90px;
+        }
+
+        #main>div:nth-child(122) {
+            margin: 0px 90px 0px -486px;
+        }
+
+        #main>div:nth-child(121) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(120) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(119) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(129) {
+            box-shadow: none;
+        }
+
+        #main>div:nth-child(132) {
+            margin: -78px 0px 0px 0px;
+        }
+
+        #main>div:nth-child(130) {
+            margin: 0px 0px 0px -78px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <div>Esc</div>
+        <div>F1</div>
+        <div>F2</div>
+        <div>F3</div>
+        <div>F4</div>
+        <div>F5</div>
+        <div>F6</div>
+        <div>F7</div>
+        <div>F8</div>
+        <div>F9</div>
+        <div>F10</div>
+        <div>F11</div>
+        <div>F12</div>
+        <div><img
+                src="https://w7.pngwing.com/pngs/608/913/png-transparent-computer-icons-google-search-symbol-mobile-search-search-for-miscellaneous-logo-mobile-phones-thumbnail.png"
+                alt=""></div>
+        <div><img src="https://freesvg.org/img/Anonymous_Paper_3_icon.png" alt=""></div>
+        <div><img src="https://i.dlpng.com/static/png/6534122_preview.png" alt=""></div>
+        <div><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGIcZGRo2uoqEEhe5-NMpacZVy4frV03BQGUeAsaNUeKqVQB_3dPnnVO9PuxvEjgers5k&usqp=CAU"
+                alt=""></div>
+        <div><img src="https://www.stanthonyshs.org/wp-content/uploads/2020/10/Sound-icon.jpg" alt=""></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><img id="logo"
+                src="https://www.seekpng.com/png/detail/5-50016_dell-icon-free-download-and-vector-png-dell.png" alt="">
+        </div>
+        <div>~<br>`</div>
+        <div>! <br>1</div>
+        <div>@ <br>2</div>
+        <div># <br>3</div>
+        <div>$ <br>4</div>
+        <div>% <br>5</div>
+        <div>^ <br>6</div>
+        <div>& <br>7</div>
+        <div>* <br>8</div>
+        <div>( <br>9</div>
+        <div>) <br>0</div>
+        <div>_ <br>-</div>
+        <div>+<br>=</div>
+        <div></div>
+        <div>Backspace</div>
+        <div>Insert <p>Print <br> Screen</p>
+        </div>
+        <div>Home <p>Scroll <br> Lock</p>
+        </div>
+        <div>PgUp <p>Pause <br> Break</p>
+        </div>
+        <div>Num <br>Lock</div>
+        <div>/</div>
+        <div>*</div>
+        <div>-</div>
+        <div></div>
+        <div>Tab</div>
+        <div>Q</div>
+        <div>W</div>
+        <div>E</div>
+        <div>R</div>
+        <div>T</div>
+        <div>Y</div>
+        <div>U</div>
+        <div>I</div>
+        <div>O</div>
+        <div>P</div>
+        <div>{ <br>[</div>
+        <div>} <br>]</div>
+        <div>| <br>\</div>
+        <div>Delete</div>
+        <div>End</div>
+        <div>PgDn</div>
+        <div>7 <br>Home</div>
+        <div>8</div>
+        <div>9 <br>PgUp</div>
+        <div></div>
+        <div></div>
+        <div>CapsLock</div>
+        <div>A</div>
+        <div>S</div>
+        <div>D</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>: <br>;</div>
+        <div>" <br>'</div>
+        <div></div>
+        <div>Enter</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>+</div>
+        <div></div>
+        <div>Shift</div>
+        <div>Z</div>
+        <div>X</div>
+        <div>C</div>
+        <div>V</div>
+        <div>B</div>
+        <div>N</div>
+        <div>M</div>
+        <div>< <br>,
+        </div>
+        <div>> <br>.</div>
+        <div>? <br>/</div>
+        <div></div>
+        <div></div>
+        <div>Shift</div>
+        <div></div>
+        <div><img src="https://png.pngtree.com/element_our/20190531/ourmid/pngtree-up-arrow-image_1287479.jpg" alt="">
+        </div>
+        <div></div>
+        <div>1 <br>End</div>
+        <div>2</div>
+        <div>3 <br>PgDn</div>
+        <div></div>
+        <div>Ctrl</div>
+        <div>
+            <p>Fn</p>
+        </div>
+        <div></div>
+        <div>Alt</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>AltGr</div>
+        <div>
+            <p>Fn</p>
+        </div>
+        <div>Ctrl</div>
+        <div><img src="https://o.dlf.pt/dfpng/smallpng/157-1574535_arrow-thin-line-to-the-left-back-arrow.png" alt="">
+        </div>
+        <div><img
+                src="https://img.favpng.com/19/23/17/computer-icons-arrow-vector-download-png-favpng-9KGxmpz5XhkDzTGsd7m2EsRD0.jpg"
+                alt=""></div>
+        <div><img
+                src="https://cdn.imgbin.com/9/6/3/imgbin-arrow-computer-icons-aesthetic-simple-strokes-black-arrow-pointing-right-jSBvEfmqYTvq7duERCVary34g.jpg"
+                alt=""></div>
+        <div></div>
+        <div>0 <br>Insert</div>
+        <div>. <br>Delete</div>
+        <div>Enter</div>
+
+</body>
+
+</html>
